@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "1fc971b5-f7a4-415c-a294-57082fc03eb0",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateMember",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurto\",\n\t\t\t\"LastName\" : \"kurto\",\n\t\t    \"BirthDate\":\"2020-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\"\n\t},\n\t\"Member\":{\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"777\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/createmember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"createmember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMember Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurto\",\n\t\t\t\"LastName\" : \"kurto\",\n\t\t    \"BirthDate\":\"2020-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\"\n\t},\n\t\"Member\":{\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"777\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/createmember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"createmember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMember Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurto\",\n\t\t\t\"LastName\" : \"kurto\",\n\t\t    \"BirthDate\":\"2020-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\"\n\t},\n\t\"Member\":{\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"777\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/createmember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"createmember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMember -Upsert (IdentityCard) -Add(Cards)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  123456,\n\t\t\t\"NatNumber\" :  \"790.41.14-207-90\",\n\t\t\t\"FirstName\" : \"Thomas\",\n\t\t\t\"LastName\" : \"Navez\",\n\t\t    \"BirthDate\":\"1990-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\"\n\t},\n\t\"Member\":{\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"777\"\n\t\t\t \"MemberId\": 1\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/createmember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"createmember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BLACKLISTMEMBER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurto\",\n\t\t\t\"LastName\" : \"kurto\",\n\t\t    \"BirthDate\":\"2020-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\"\n\t},\n\t\"Member\":{\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"777\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/createmember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"createmember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMember",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurtoupdatedaaa\",\n\t\t\t\"LastName\" : \"kurtoupdatedbbbb\",\n\t\t    \"BirthDate\":\"2018-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\",\n\t\t\t\"memberId\":\t13\n\t},\n\t\"Member\":{\n\t\t\t\"memberId\":\t13,\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"8888\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/updatemember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"updatemember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMember Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurtoupdatedaaa\",\n\t\t\t\"LastName\" : \"kurtoupdatedbbbb\",\n\t\t    \"BirthDate\":\"2018-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\",\n\t\t\t\"memberId\":\t13\n\t},\n\t\"Member\":{\n\t\t\t\"memberId\":\t13,\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"8888\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/updatemember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"updatemember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMember Copy Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"IdentityCard\":{\n\t\t\t\"CardNumber\":  999,\n\t\t\t\"NatNumber\" : \"830.01.14-207-91\",\n\t\t\t\"FirstName\" : \"kurtoupdatedaaa\",\n\t\t\t\"LastName\" : \"kurtoupdatedbbbb\",\n\t\t    \"BirthDate\":\"2018-01-06T17:16:40\",\n\t\t    \"ValiDate\":\"2000-01-06T17:16:40\",\n\t\t    \"ExpirDate\":\"2048-01-06T17:16:40\",\n\t\t\t\"memberId\":\t13\n\t},\n\t\"Member\":{\n\t\t\t\"memberId\":\t13,\n\t\t\t\"Email\" : \"1@gmail.com\",\n\t\t\t \"PhoneNumber\" : \"8888\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44318/api/Libraries/updatemember",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44318",
+					"path": [
+						"api",
+						"Libraries",
+						"updatemember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllMember",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMember",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlackListCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
